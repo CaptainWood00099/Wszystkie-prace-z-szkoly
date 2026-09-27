@@ -1,0 +1,32 @@
+function zwierz(rasa, wiek, nazwa){
+    this.rasa = rasa
+    this.wiek = wiek
+    this.nazwa = nazwa
+}
+undefined
+new kot = zwierz("syjamski", "4", "Mruczek")
+VM1560:1 Uncaught SyntaxError: Invalid left-hand side in assignment
+const kot = new zwierz("syjamski", "4", "Mruczek")
+undefined
+const pies = new zwierz("Owczarek Niemiecki", "7", "Azor")
+undefined
+const krowa = new zwierz("Duńskie bydło czerwone", "5", "Krasula")
+undefined
+kot.dajglos= function (){
+    console.log("Miau, Miau, Miau..")
+}
+
+kot.DajGłos= () => (console.log("Miau, Miau, Miau,..."))
+pies.DajGłos= () => (console.log("Hau, Hau, Hau,..."))
+krowa.DajGłos= () => (console.log("Muuu, Muuu, Muuu, ..."))
+
+const samochod={}
+samochod.marka="toyota"
+samochod.model="Corolla"
+samochod.rok=2005
+samochod.kolor="red"
+
+samochod.spalanie= function(km, l){
+let spali=(l/km)*100
+    console.log("Samochod spali " +spali+ " litrów")
+}

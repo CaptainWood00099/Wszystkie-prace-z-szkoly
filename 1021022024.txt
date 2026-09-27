@@ -1,0 +1,53 @@
+class Osoba {
+  constructor(imie, nazwisko) {
+    this.imie = imie;
+    this.nazwisko = nazwisko;
+  }
+}
+const osoba1 = new Osoba("Jan", "Kowalski");
+const osoba2 = new Osoba("Oskar", "Wieczorkiewicz");
+
+osoba2.wiek=18
+
+osoba2.Wizytowka=function() {
+    console.log(osoba2.imie+ " " +osoba2.nazwisko+ ", mam " +osoba2.wiek)
+}
+
+class samochod{
+    constructor(marka, model, rok_produkcji){
+    this.marka=marka;
+    this.model=model;
+    this.rok_produkcji=rok_produkcji;
+}
+}
+
+samochod.spalanie=function(l,km){
+    spalanie=(l/km)*100;
+    return spalanie;
+}
+
+const samochod1= new samochod("fiat", "panda", "2024");
+const samochod2= new samochod("toyota", "yaris", "2021");
+const samochod3= new samochod("BMW", "350i", "2007");
+samochod1.spalanie(10,100)
+samochod2.spalanie(10,100)
+samochod3.spalanie(10,100)
+
+class Ksiazka{
+    constructor(autor, tytul, rok_wydania){
+        this.autor=autor;
+        this.tytul=tytul;
+        this.rok_wydania=rok_wydania;
+    }
+}
+
+Ksiazka.czyta=function() {
+    console.log("Czyta Jan Ferency");
+}
+
+const book1=new Ksiazka("Jan Sobiewski", "Jakas Ksiazka 1", "2012")
+const book2=new Ksiazka("Magdalena Bażant", "Jakas Ksiazka 2", "1923")
+const book3=new Ksiazka("Bartosz Siudy", "Siwy Dym", "1765")
+book1.czyta()
+book2.czyta()
+book3.czyta()
