@@ -1,0 +1,27 @@
+const student={}
+student.nazwisko="Kowalski"
+student.imie="Jan"
+student.adres_Akademika={
+    city:"Sławno",
+    ulica:"Lipowa 1",
+    telefon:"123456789"
+}
+student.sqrt=function(a){
+return Math.sqrt(a)
+}
+
+student.programista={
+    programowanie:["JS", "C++", "PHP"]
+}
+
+const student_1=Object.create(student)
+student_1.imie="Oskar"
+student_1.nazwisko="Wieczorkiewicz"
+student_1.programista.programowanie[1]="Python"
+
+student_1.potega=function(x,y) {
+    return Math.pow(x,y)
+}
+
+student_1.sqrt(355)
+student_1.potega(13,3)
